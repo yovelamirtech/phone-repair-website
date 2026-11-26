@@ -1,5 +1,5 @@
 import { createBrowserRouter, type RouteObject } from 'react-router';
-import { Layout } from './components/layout/Layout';
+import { Layout, PageFallback } from './components/layout/Layout';
 import { RouteError } from './components/layout/RouteError';
 import HomePage from './pages/home/HomePage';
 import { routes } from './config/routes';
@@ -24,6 +24,6 @@ const children: RouteObject[] = [
 ];
 
 export const router = createBrowserRouter(
-  [{ path: '/', Component: Layout, ErrorBoundary: RouteError, children }],
+  [{ path: '/', Component: Layout, ErrorBoundary: RouteError, HydrateFallback: PageFallback, children }],
   { basename: import.meta.env.BASE_URL.replace(/\/$/, '') || '/' },
 );

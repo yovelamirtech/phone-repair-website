@@ -5,7 +5,19 @@
     "defaultDescription": "תיקון טלפונים בכרמיאל: מסכים, סוללות, שקעי טעינה ונזקי מים. אבחון חינם, מחיר שקוף ואחריות."
   },
   "a11y": {
-    "skipToContent": "דלג לתוכן"
+    "skipToContent": "דלג לתוכן",
+    "loading": "טוען…",
+    "opensInNewTab": "(נפתח בלשונית חדשה)"
+  },
+  "demo": {
+    "banner": "אתר בהדגמה — התוכן באתר לדוגמה בלבד"
+  },
+  "header": {
+    "logoLabel": "פיקסלאב — לדף הבית",
+    "mainNav": "ניווט ראשי",
+    "menuOpen": "פתיחת תפריט",
+    "menuClose": "סגירת תפריט",
+    "menuTitle": "תפריט"
   },
   "nav": {
     "home": "בית",
@@ -19,6 +31,47 @@
     "contact": "צור קשר",
     "accessibility": "הצהרת נגישות",
     "privacy": "מדיניות פרטיות"
+  },
+  "language": {
+    "label": "שפה",
+    "he": "עברית",
+    "en": "English",
+    "ru": "Русский"
+  },
+  "whatsapp": {
+    "fabLabel": "שליחת הודעה בוואטסאפ (נפתח בלשונית חדשה)",
+    "greeting": "שלום פיקסלאב, אשמח לקבל פרטים על תיקון"
+  },
+  "contact": {
+    "phone": "טלפון",
+    "email": "מייל",
+    "address": "כתובת",
+    "call": "התקשרו",
+    "whatsapp": "וואטסאפ",
+    "whatsappChat": "צ'אט בוואטסאפ"
+  },
+  "hours": {
+    "openNow": "פתוח עכשיו",
+    "closedNow": "סגור עכשיו",
+    "closesAt": "עד {{time}}",
+    "opensAt": "נפתח {{day}} ב־{{time}}",
+    "today": "היום",
+    "tomorrow": "מחר",
+    "closed": "סגור"
+  },
+  "price": {
+    "vatIncluded": "המחירים כוללים מע\"מ",
+    "from": "החל מ־{{price}}",
+    "free": "חינם",
+    "variable": "משתנה"
+  },
+  "footer": {
+    "about": "מעבדת תיקון טלפונים בכרמיאל. אבחון חינם, מחיר שקוף מראש, חלקים איכותיים ואחריות על כל תיקון.",
+    "linksTitle": "ניווט באתר",
+    "contactTitle": "יצירת קשר",
+    "hoursTitle": "שעות פתיחה",
+    "rights": "© {{year}} {{name}}. כל הזכויות שמורות.",
+    "demoNote": "אתר בהדגמה, התוכן לדוגמה"
   },
   "error": {
     "title": "משהו השתבש",

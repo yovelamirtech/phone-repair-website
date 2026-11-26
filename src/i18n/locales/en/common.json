@@ -5,7 +5,19 @@
     "defaultDescription": ""
   },
   "a11y": {
-    "skipToContent": ""
+    "skipToContent": "",
+    "loading": "",
+    "opensInNewTab": ""
+  },
+  "demo": {
+    "banner": ""
+  },
+  "header": {
+    "logoLabel": "",
+    "mainNav": "",
+    "menuOpen": "",
+    "menuClose": "",
+    "menuTitle": ""
   },
   "nav": {
     "home": "",
@@ -19,6 +31,47 @@
     "contact": "",
     "accessibility": "",
     "privacy": ""
+  },
+  "language": {
+    "label": "",
+    "he": "",
+    "en": "",
+    "ru": ""
+  },
+  "whatsapp": {
+    "fabLabel": "",
+    "greeting": ""
+  },
+  "contact": {
+    "phone": "",
+    "email": "",
+    "address": "",
+    "call": "",
+    "whatsapp": "",
+    "whatsappChat": ""
+  },
+  "hours": {
+    "openNow": "",
+    "closedNow": "",
+    "closesAt": "",
+    "opensAt": "",
+    "today": "",
+    "tomorrow": "",
+    "closed": ""
+  },
+  "price": {
+    "vatIncluded": "",
+    "from": "",
+    "free": "",
+    "variable": ""
+  },
+  "footer": {
+    "about": "",
+    "linksTitle": "",
+    "contactTitle": "",
+    "hoursTitle": "",
+    "rights": "",
+    "demoNote": ""
   },
   "error": {
     "title": "",

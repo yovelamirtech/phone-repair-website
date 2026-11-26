@@ -30,6 +30,10 @@
   --color-danger-ink: #b3261e;
   --color-danger-soft: #fdeceb;
 
+  /* WhatsApp actions: a darker WhatsApp teal so white text/glyph keep 4.5:1 contrast */
+  --color-whatsapp: #0f7a6e;
+  --color-whatsapp-hover: #0c665c;
+
   /* light slide tints for the promo carousel */
   --color-tint-blue: #eef3ff;
   --color-tint-green: #eaf7f0;
