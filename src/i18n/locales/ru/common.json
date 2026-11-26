@@ -1,0 +1,28 @@
+{
+  "seo": {
+    "siteName": "",
+    "defaultTitle": "",
+    "defaultDescription": ""
+  },
+  "a11y": {
+    "skipToContent": ""
+  },
+  "nav": {
+    "home": "",
+    "prices": "",
+    "order": "",
+    "status": "",
+    "about": "",
+    "gallery": "",
+    "faq": "",
+    "warranty": "",
+    "contact": "",
+    "accessibility": "",
+    "privacy": ""
+  },
+  "error": {
+    "title": "",
+    "text": "",
+    "reload": ""
+  }
+}

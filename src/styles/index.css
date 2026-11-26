@@ -1,0 +1,152 @@
+@import 'tailwindcss';
+
+/*
+ * Design tokens. Components use ONLY these (the default Tailwind palette is switched off).
+ * Base hues come from the plan. "-strong"/"-ink" variants are slightly darker versions used for
+ * text and filled buttons so every text/background pair stays at 4.5:1 or better (see README).
+ */
+@theme {
+  --color-*: initial;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-transparent: transparent;
+  --color-current: currentColor;
+
+  --color-bg: #ffffff;
+  --color-surface: #f5f5f7;
+  --color-ink: #1d1d1f;
+  --color-muted: #6e6e73;
+  --color-line: #e5e5ea;
+  --color-accent: #2f6bff;
+  --color-accent-strong: #2563eb;
+  --color-accent-soft: #eef3ff;
+  --color-success: #1f9d55;
+  --color-success-ink: #157a41;
+  --color-success-soft: #eaf7f0;
+  --color-warning: #c77700;
+  --color-warning-ink: #9a5b00;
+  --color-warning-soft: #fff5e6;
+  --color-danger: #d93025;
+  --color-danger-ink: #b3261e;
+  --color-danger-soft: #fdeceb;
+
+  /* light slide tints for the promo carousel */
+  --color-tint-blue: #eef3ff;
+  --color-tint-green: #eaf7f0;
+  --color-tint-amber: #fff4e5;
+  --color-tint-violet: #f3efff;
+
+  --font-sans: 'Heebo Variable', 'Inter Variable', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+  --font-latin: 'Inter Variable', 'Heebo Variable', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+
+  --radius-card: 1.5rem;
+  --radius-xl2: 1.25rem;
+
+  --shadow-soft: 0 1px 2px rgb(0 0 0 / 0.04), 0 8px 24px rgb(0 0 0 / 0.06);
+  --shadow-lift: 0 2px 4px rgb(0 0 0 / 0.05), 0 16px 40px rgb(0 0 0 / 0.1);
+
+  --container-content: 1200px;
+
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    @apply bg-bg text-ink font-sans;
+    font-size: 1.0625rem;
+    line-height: 1.65;
+  }
+
+  html:lang(en) body,
+  html:lang(ru) body {
+    font-family: var(--font-latin);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 2px;
+    border-radius: 0.5rem;
+  }
+
+  ::selection {
+    background: var(--color-accent-soft);
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-(--container-content) px-4 sm:px-6 lg:px-8;
+  }
+
+  .section {
+    @apply py-16 sm:py-20 lg:py-24;
+  }
+
+  .card {
+    @apply rounded-(--radius-card) border border-line bg-bg shadow-(--shadow-soft);
+  }
+
+  .card-lift {
+    transition:
+      transform 250ms var(--ease-out-soft),
+      box-shadow 250ms var(--ease-out-soft);
+  }
+  .card-lift:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lift);
+  }
+
+  /* left-to-right islands inside RTL text: phone numbers, order numbers */
+  .ltr-nums {
+    direction: ltr;
+    unicode-bidi: isolate;
+    display: inline-block;
+  }
+
+  /* scroll reveal (useReveal hook adds .is-visible) */
+  .reveal {
+    opacity: 0;
+    transform: translateY(14px);
+    transition:
+      opacity 400ms var(--ease-out-soft),
+      transform 400ms var(--ease-out-soft);
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+  .card-lift:hover {
+    transform: none;
+  }
+}
