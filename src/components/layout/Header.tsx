@@ -45,10 +45,10 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <LanguageSwitcher className="hidden lg:inline-flex" />
-          <ButtonLink to={routes.order} className="hidden lg:inline-flex">
-            {t('nav.order')}
-          </ButtonLink>
+          <div className="hidden items-center gap-2 lg:flex">
+            <LanguageSwitcher />
+            <ButtonLink to={routes.order}>{t('nav.order')}</ButtonLink>
+          </div>
           <button
             ref={toggleRef}
             type="button"

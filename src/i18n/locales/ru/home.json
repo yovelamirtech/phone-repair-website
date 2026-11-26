@@ -3,5 +3,109 @@
     "title": "",
     "description": ""
   },
-  "title": ""
+  "title": "",
+  "carousel": {
+    "label": "",
+    "roledescription": "",
+    "slide": "",
+    "slideOf": "",
+    "prev": "",
+    "next": "",
+    "goTo": "",
+    "pause": "",
+    "play": ""
+  },
+  "hero": {
+    "title": "",
+    "subtitle": "",
+    "ctaOrder": "",
+    "ctaPrices": "",
+    "point1": "",
+    "point2": "",
+    "point3": ""
+  },
+  "popular": {
+    "title": "",
+    "subtitle": "",
+    "all": ""
+  },
+  "how": {
+    "title": "",
+    "subtitle": "",
+    "stepLabel": "",
+    "steps": {
+      "book": {
+        "title": "",
+        "text": ""
+      },
+      "diagnose": {
+        "title": "",
+        "text": ""
+      },
+      "repair": {
+        "title": "",
+        "text": ""
+      },
+      "pickup": {
+        "title": "",
+        "text": ""
+      }
+    }
+  },
+  "why": {
+    "title": "",
+    "subtitle": "",
+    "imageAlt": "",
+    "items": {
+      "transparent": {
+        "title": "",
+        "text": ""
+      },
+      "diagnosis": {
+        "title": "",
+        "text": ""
+      },
+      "warranty": {
+        "title": "",
+        "text": ""
+      },
+      "fast": {
+        "title": "",
+        "text": ""
+      },
+      "parts": {
+        "title": "",
+        "text": ""
+      },
+      "privacy": {
+        "title": "",
+        "text": ""
+      }
+    }
+  },
+  "reviews": {
+    "title": "",
+    "summary": "",
+    "listLabel": ""
+  },
+  "gallery": {
+    "title": "",
+    "subtitle": "",
+    "all": "",
+    "before": "",
+    "after": ""
+  },
+  "location": {
+    "title": "",
+    "parking": "",
+    "waze": "",
+    "google": "",
+    "contact": ""
+  },
+  "cta": {
+    "title": "",
+    "subtitle": "",
+    "order": "",
+    "status": ""
+  }
 }

@@ -77,5 +77,8 @@
     "title": "",
     "text": "",
     "reload": ""
+  },
+  "reviews": {
+    "rating": ""
   }
 }
