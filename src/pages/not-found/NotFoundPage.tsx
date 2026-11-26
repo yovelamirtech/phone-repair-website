@@ -9,7 +9,7 @@ export default function NotFoundPage() {
     <>
       <Seo title={t('seo.title')} description={t('seo.description')} />
       <section className="container-page section text-center">
-        <p className="text-7xl font-bold tracking-tight text-line sm:text-9xl" aria-hidden="true">
+        <p className="text-7xl font-bold tracking-tight text-muted sm:text-9xl" aria-hidden="true">
           404
         </p>
         <h1 className="mt-4 text-3xl font-bold sm:text-5xl">{t('title')}</h1>

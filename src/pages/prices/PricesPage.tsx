@@ -169,7 +169,7 @@ function ModelCard({ modelRef, onlyRepair }: { modelRef: ModelRef; onlyRepair?: 
   const list = repairs.filter((r) => (!onlyRepair || r.id === onlyRepair) && isRepairAvailable(model, r.id));
 
   return (
-    <li className="card flex min-w-0 flex-col p-5 [content-visibility:auto] [contain-intrinsic-size:auto_420px] sm:p-6">
+    <li className="card flex min-w-0 flex-col p-5 sm:p-6">
       <div className="flex items-start justify-between gap-3">
         <div>
           <h3 className="text-xl font-semibold">

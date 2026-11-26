@@ -17,8 +17,6 @@ type Props = {
   priority?: boolean;
 };
 
-export const hasPhoto = (name: PhotoName) => name in data.images;
-
 /**
  * Responsive WebP image from public/images/photos (see scripts/fetch-images.mjs).
  * If the photo hasn't been downloaded, a clean light surface is shown instead of a broken image.
@@ -44,9 +42,4 @@ export function Photo({ name, alt, sizes, className = '', priority = false }: Pr
       className={`bg-surface ${className}`}
     />
   );
-}
-
-/** URL of a photo at a given width, for <link rel="preload">. */
-export function photoUrl(name: PhotoName, width: number) {
-  return asset(`images/photos/${name}-${width}.webp`);
 }

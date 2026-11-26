@@ -21,6 +21,8 @@ export default tseslint.config(
       ...reactHooks.configs.recommended.rules,
       'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
       '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+      // informational only (react-hook-form's watch); this project doesn't use the React Compiler
+      'react-hooks/incompatible-library': 'off',
     },
   },
 );
