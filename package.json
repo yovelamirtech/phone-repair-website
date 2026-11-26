@@ -11,7 +11,9 @@
     "lint": "eslint .",
     "test": "vitest run",
     "locales:sync": "node scripts/sync-locales.mjs",
-    "check": "npm run typecheck && npm run lint && npm run test"
+    "check": "npm run typecheck && npm run lint && npm run test",
+    "images:fetch": "node scripts/fetch-images.mjs",
+    "brand:generate": "node scripts/generate-brand-assets.mjs"
   },
   "dependencies": {
     "@fontsource-variable/heebo": "^5.3.0",

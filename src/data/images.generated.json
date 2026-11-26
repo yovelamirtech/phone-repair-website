@@ -1,0 +1,94 @@
+{
+  "widths": [
+    480,
+    960,
+    1600
+  ],
+  "images": {
+    "promo-battery": {
+      "width": 1600,
+      "height": 1067,
+      "ratio": 1.4995
+    },
+    "promo-screen": {
+      "width": 1600,
+      "height": 900,
+      "ratio": 1.7778
+    },
+    "promo-express": {
+      "width": 1600,
+      "height": 900,
+      "ratio": 1.7778
+    },
+    "promo-diagnosis": {
+      "width": 1600,
+      "height": 1067,
+      "ratio": 1.4995
+    },
+    "workbench-tools": {
+      "width": 1600,
+      "height": 1067,
+      "ratio": 1.4995
+    },
+    "hands-repair": {
+      "width": 1600,
+      "height": 2844,
+      "ratio": 0.5626
+    },
+    "about-workbench": {
+      "width": 1600,
+      "height": 1067,
+      "ratio": 1.4995
+    },
+    "gallery-screen-1-before": {
+      "width": 1600,
+      "height": 2400,
+      "ratio": 0.6667
+    },
+    "gallery-screen-1-after": {
+      "width": 1600,
+      "height": 900,
+      "ratio": 1.7778
+    },
+    "gallery-screen-2-before": {
+      "width": 1600,
+      "height": 900,
+      "ratio": 1.7778
+    },
+    "gallery-screen-2-after": {
+      "width": 1600,
+      "height": 900,
+      "ratio": 1.7778
+    },
+    "gallery-screen-3-before": {
+      "width": 1600,
+      "height": 2400,
+      "ratio": 0.6667
+    },
+    "gallery-screen-3-after": {
+      "width": 1600,
+      "height": 900,
+      "ratio": 1.7778
+    },
+    "gallery-backglass-before": {
+      "width": 1600,
+      "height": 2400,
+      "ratio": 0.6667
+    },
+    "gallery-backglass-after": {
+      "width": 1600,
+      "height": 900,
+      "ratio": 1.7778
+    },
+    "gallery-battery-before": {
+      "width": 1600,
+      "height": 1067,
+      "ratio": 1.4995
+    },
+    "gallery-battery-after": {
+      "width": 1600,
+      "height": 900,
+      "ratio": 1.7778
+    }
+  }
+}
