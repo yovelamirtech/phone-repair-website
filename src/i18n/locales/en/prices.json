@@ -3,5 +3,41 @@
     "title": "",
     "description": ""
   },
-  "title": ""
+  "title": "",
+  "subtitle": "",
+  "filters": {
+    "label": "",
+    "search": "",
+    "searchPlaceholder": "",
+    "repair": "",
+    "allRepairs": "",
+    "brand": "",
+    "allBrands": "",
+    "clear": ""
+  },
+  "results": {
+    "count_one": "",
+    "count_two": "",
+    "count_many": "",
+    "count_other": "",
+    "emptyTitle": "",
+    "emptyText": "",
+    "emptyCta": ""
+  },
+  "card": {
+    "order": "",
+    "orderFor": "",
+    "orderRepair": "",
+    "caption": "",
+    "repair": "",
+    "price": ""
+  },
+  "quality": {
+    "original": "",
+    "compatible": ""
+  },
+  "notes": {
+    "vat": "",
+    "final": ""
+  }
 }

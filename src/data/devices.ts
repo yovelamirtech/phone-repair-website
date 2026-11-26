@@ -31,6 +31,8 @@ export type DeviceSeries = { id: string; name: string; models: DeviceModel[] };
 export type Brand = {
   id: string;
   name: LocalizedText;
+  /** Extra words people search with (e.g. Hebrew spelling of the product name). */
+  searchAliases: string[];
   series: DeviceSeries[];
 };
 
@@ -52,6 +54,7 @@ export const brands: Brand[] = [
   {
     id: 'apple',
     name: { he: 'אפל', en: 'Apple', ru: 'Apple' },
+    searchAliases: ['אייפון', 'איפון', 'iphone', 'apple'],
     series: [
       { id: 'iphone-18', name: 'iPhone 18', models: [m('iPhone 18 Pro Max', 'flagship', 2026), m('iPhone 18 Pro', 'flagship', 2026)] },
       {
@@ -135,6 +138,7 @@ export const brands: Brand[] = [
   {
     id: 'samsung',
     name: { he: 'סמסונג', en: 'Samsung', ru: 'Samsung' },
+    searchAliases: ['גלקסי', 'galaxy', 'samsung'],
     series: [
       {
         id: 'galaxy-s',
@@ -196,6 +200,7 @@ export const brands: Brand[] = [
   {
     id: 'xiaomi',
     name: { he: 'שיאומי, רדמי ופוקו', en: 'Xiaomi, Redmi & POCO', ru: 'Xiaomi, Redmi и POCO' },
+    searchAliases: ['שיאומי', 'רדמי', 'פוקו', 'xiaomi', 'redmi', 'poco', 'mi'],
     series: [
       {
         id: 'xiaomi',
@@ -241,6 +246,7 @@ export const brands: Brand[] = [
   {
     id: 'google',
     name: { he: 'גוגל פיקסל', en: 'Google Pixel', ru: 'Google Pixel' },
+    searchAliases: ['פיקסל', 'גוגל', 'pixel', 'google'],
     series: [
       {
         id: 'pixel-11',
@@ -283,6 +289,7 @@ export const brands: Brand[] = [
   {
     id: 'oneplus',
     name: { he: 'וואנפלוס', en: 'OnePlus', ru: 'OnePlus' },
+    searchAliases: ['וואן פלוס', 'oneplus', 'one plus'],
     series: [
       {
         id: 'oneplus',
@@ -308,6 +315,7 @@ export const brands: Brand[] = [
   {
     id: 'motorola',
     name: { he: 'מוטורולה', en: 'Motorola', ru: 'Motorola' },
+    searchAliases: ['מוטו', 'מוטורולה', 'moto', 'motorola'],
     series: [
       { id: 'razr', name: 'razr', models: [m('razr 60 ultra', 'premium', 2025), m('razr 60', 'premium', 2025)] },
       {
@@ -329,6 +337,7 @@ export const brands: Brand[] = [
   {
     id: 'oppo',
     name: { he: 'אופו', en: 'OPPO', ru: 'OPPO' },
+    searchAliases: ['אופו', 'oppo'],
     series: [
       { id: 'find-x', name: 'Find X', models: [m('Find X9 Pro', 'flagship', 2025), m('Find X9', 'flagship', 2025), m('Find X8 Pro', 'flagship', 2024)] },
       { id: 'reno', name: 'Reno', models: [m('Reno14 Pro', 'mid', 2025), m('Reno14', 'mid', 2025), m('Reno13', 'mid', 2025)] },
