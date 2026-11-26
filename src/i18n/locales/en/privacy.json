@@ -3,5 +3,46 @@
     "title": "",
     "description": ""
   },
-  "title": ""
+  "title": "",
+  "subtitle": "",
+  "sections": {
+    "collected": {
+      "title": "",
+      "body": "",
+      "items": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "device": ""
+      }
+    },
+    "notCollected": {
+      "title": "",
+      "body": ""
+    },
+    "use": {
+      "title": "",
+      "items": {
+        "appointment": "",
+        "warranty": "",
+        "noMarketing": ""
+      }
+    },
+    "storage": {
+      "title": "",
+      "body": ""
+    },
+    "whatsapp": {
+      "title": "",
+      "body": ""
+    },
+    "cookies": {
+      "title": "",
+      "body": ""
+    },
+    "rights": {
+      "title": "",
+      "body": ""
+    }
+  }
 }

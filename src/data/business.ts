@@ -47,8 +47,16 @@ export const business = {
     5: [{ open: '09:00', close: '13:00' }],
     6: [],
   } satisfies WeeklyHours as WeeklyHours,
-  /** Year the business was founded (shown in the footer copyright line). @temporary */
+  /** Year the business was founded. @temporary */
   foundedYear: 2026,
+  /** Accessibility coordinator, shown on the accessibility statement. @temporary fill in before going live */
+  accessibilityCoordinator: {
+    name: { he: '[שם רכז/ת הנגישות]', en: '[Accessibility coordinator name]' } satisfies LocalizedText,
+    phone: '04-000-0000',
+    email: 'hello@example.com',
+  },
+  /** Last time the accessibility statement was reviewed (YYYY-MM-DD). */
+  accessibilityStatementUpdated: '2026-11-26',
 } as const;
 
 export type Business = typeof business;

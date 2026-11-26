@@ -3,5 +3,20 @@
     "title": "",
     "description": ""
   },
-  "title": ""
+  "title": "",
+  "subtitle": "",
+  "months_one": "",
+  "months_two": "",
+  "months_many": "",
+  "months_other": "",
+  "period": {
+    "original": "",
+    "compatible": ""
+  },
+  "fromDate": "",
+  "covered": "",
+  "notCovered": "",
+  "howTitle": "",
+  "contact": "",
+  "status": ""
 }

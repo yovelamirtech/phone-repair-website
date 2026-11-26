@@ -3,5 +3,19 @@
     "title": "",
     "description": ""
   },
-  "title": ""
+  "title": "",
+  "subtitle": "",
+  "search": "",
+  "searchPlaceholder": "",
+  "results_one": "",
+  "results_two": "",
+  "results_many": "",
+  "results_other": "",
+  "empty": "",
+  "more": {
+    "title": "",
+    "text": "",
+    "whatsapp": "",
+    "contact": ""
+  }
 }

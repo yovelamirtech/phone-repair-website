@@ -1,14 +1,14 @@
 import { useTranslation } from 'react-i18next';
+import { ProsePage } from '../../components/ProsePage';
 import { Seo } from '../../components/Seo';
+import { business } from '../../data/business';
 
 export default function PrivacyPage() {
   const { t } = useTranslation('privacy');
   return (
     <>
       <Seo title={t('seo.title')} description={t('seo.description')} />
-      <section className="container-page section">
-        <h1 className="text-4xl font-bold sm:text-5xl">{t('title')}</h1>
-      </section>
+      <ProsePage ns="privacy" values={{ email: business.email, phone: business.phone }} />
     </>
   );
 }

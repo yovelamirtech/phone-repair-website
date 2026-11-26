@@ -146,7 +146,7 @@ export default function PricesPage() {
           grouped.map((g) => (
             <div key={g.id} className="mb-12">
               <h2 className="mb-4 text-2xl font-bold">{l(g.brand.name)}</h2>
-              <ul className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+              <ul className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
                 {g.refs.map((ref) => (
                   <ModelCard key={ref.model.id} modelRef={ref} onlyRepair={repairId || undefined} />
                 ))}
@@ -169,7 +169,7 @@ function ModelCard({ modelRef, onlyRepair }: { modelRef: ModelRef; onlyRepair?: 
   const list = repairs.filter((r) => (!onlyRepair || r.id === onlyRepair) && isRepairAvailable(model, r.id));
 
   return (
-    <li className="card flex flex-col p-5 [content-visibility:auto] [contain-intrinsic-size:auto_420px] sm:p-6">
+    <li className="card flex min-w-0 flex-col p-5 [content-visibility:auto] [contain-intrinsic-size:auto_420px] sm:p-6">
       <div className="flex items-start justify-between gap-3">
         <div>
           <h3 className="text-xl font-semibold">

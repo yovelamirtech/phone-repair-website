@@ -29,7 +29,7 @@ export function Confirmation({ order }: { order: ConfirmedOrder }) {
   const address = `${l(business.address.street)}, ${l(business.address.city)}`;
 
   const message = [
-    t('whatsapp.intro', { name: l(business.name) }),
+    t('whatsapp.intro'),
     t('whatsapp.order', { order: orderNumber }),
     t('whatsapp.device', { device }),
     t('whatsapp.repairs', { repairs }),
@@ -47,7 +47,7 @@ export function Confirmation({ order }: { order: ConfirmedOrder }) {
       uid: `${orderNumber}@pixellab`,
       date: draft.date,
       time: draft.time,
-      title: t('calendar.title', { name: l(business.name), device }),
+      title: t('calendar.title', { device }),
       description: t('calendar.description', { order: orderNumber, repairs, phone: business.phone }),
       location: address,
     });

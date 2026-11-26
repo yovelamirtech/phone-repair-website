@@ -3,5 +3,40 @@
     "title": "",
     "description": ""
   },
-  "title": ""
+  "title": "",
+  "subtitle": "",
+  "updated": "",
+  "coordinator": {
+    "title": "",
+    "name": "",
+    "phone": "",
+    "email": ""
+  },
+  "sections": {
+    "done": {
+      "title": "",
+      "items": {
+        "semantic": "",
+        "keyboard": "",
+        "contrast": "",
+        "text": "",
+        "images": "",
+        "forms": "",
+        "motion": "",
+        "targets": ""
+      }
+    },
+    "limits": {
+      "title": "",
+      "body": ""
+    },
+    "contact": {
+      "title": "",
+      "body": ""
+    },
+    "physical": {
+      "title": "",
+      "body": ""
+    }
+  }
 }

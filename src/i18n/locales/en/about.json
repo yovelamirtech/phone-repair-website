@@ -3,5 +3,37 @@
     "title": "",
     "description": ""
   },
-  "title": ""
+  "eyebrow": "",
+  "title": "",
+  "imageAlt": "",
+  "story": {
+    "p1": "",
+    "p2": "",
+    "p3": ""
+  },
+  "stats": {
+    "title": "",
+    "repairs": "",
+    "years": "",
+    "rating": "",
+    "sameDay": "",
+    "note": ""
+  },
+  "values": {
+    "title": "",
+    "transparency": {
+      "title": "",
+      "text": ""
+    },
+    "diagnosis": {
+      "title": "",
+      "text": ""
+    },
+    "warranty": {
+      "title": "",
+      "text": ""
+    }
+  },
+  "ctaOrder": "",
+  "ctaContact": ""
 }

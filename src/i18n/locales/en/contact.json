@@ -3,5 +3,42 @@
     "title": "",
     "description": ""
   },
-  "title": ""
+  "title": "",
+  "subtitle": "",
+  "details": "",
+  "form": {
+    "title": "",
+    "demoNote": "",
+    "name": "",
+    "phone": "",
+    "email": "",
+    "optional": "",
+    "message": "",
+    "consent": "",
+    "privacyLink": "",
+    "submit": "",
+    "sending": "",
+    "whatsapp": "",
+    "sentTitle": "",
+    "sentText": "",
+    "another": ""
+  },
+  "whatsappIntro": "",
+  "whatsappName": "",
+  "errors": {
+    "name": "",
+    "phone": "",
+    "email": "",
+    "message": "",
+    "messageLong": "",
+    "consent": ""
+  },
+  "map": {
+    "heading": "",
+    "title": "",
+    "loading": "",
+    "parking": "",
+    "waze": "",
+    "google": ""
+  }
 }

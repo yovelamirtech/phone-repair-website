@@ -129,7 +129,7 @@
     "navigate": "ניווט למעבדה"
   },
   "whatsapp": {
-    "intro": "שלום {{name}}, קבעתי תור באתר.",
+    "intro": "שלום {{businessName}}, קבעתי תור באתר.",
     "order": "מספר הזמנה: {{order}}",
     "device": "מכשיר: {{device}}",
     "repairs": "תיקון: {{repairs}}",
@@ -139,7 +139,7 @@
     "notes": "תיאור: {{notes}}"
   },
   "calendar": {
-    "title": "תיקון {{device}} ב{{name}}",
+    "title": "תיקון {{device}} ב{{businessName}}",
     "description": "מספר הזמנה: {{order}}\nתיקון: {{repairs}}\nטלפון המעבדה: {{phone}}"
   }
 }

@@ -1,6 +1,8 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import { rtlLanguages, siteConfig, type LanguageCode } from '../config/site';
+import { business } from '../data/business';
+import { pickLocalized } from '../lib/localized';
 import { readJson, storageKeys, writeJson } from '../lib/storage';
 
 /**
@@ -45,12 +47,21 @@ void i18n.use(initReactI18next).init({
   defaultNS: 'common',
   returnEmptyString: false,
   returnNull: false,
-  interpolation: { escapeValue: false },
+  // {{businessName}} is available in every string, from src/data/business.ts
+  interpolation: { escapeValue: false, defaultVariables: { businessName: business.name.he } },
   react: { useSuspense: false },
 });
 
 applyDocumentLanguage(i18n.language);
+function setDefaultVariables(lng: string) {
+  if (i18n.options.interpolation) {
+    i18n.options.interpolation.defaultVariables = { businessName: pickLocalized(business.name, lng) };
+  }
+}
+setDefaultVariables(i18n.language);
+
 i18n.on('languageChanged', (lng) => {
+  setDefaultVariables(lng);
   applyDocumentLanguage(lng);
   writeJson(storageKeys.language, lng);
 });
