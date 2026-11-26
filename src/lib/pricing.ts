@@ -62,7 +62,7 @@ export function getRepairPrice(model: DeviceModel, repairId: RepairId, quality: 
   const override = model.priceOverrides?.[key];
   if (override != null) return { amount: override, startingFrom, free: override === 0 };
 
-  const base = hasQualityOptions(repair) ? repair.basePrice[quality] : repair.basePrice;
+  const base = typeof repair.basePrice === 'number' ? repair.basePrice : repair.basePrice[quality];
   if (base === 0) return { amount: 0, startingFrom: false, free: true };
   const amount = repair.tierScaled ? roundPrice(base * tierMultipliers[model.tier]) : base;
   return { amount, startingFrom, free: false };
