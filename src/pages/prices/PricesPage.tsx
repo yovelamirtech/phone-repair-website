@@ -1,7 +1,7 @@
 import { useDeferredValue, useMemo } from 'react';
 import { Link, useSearchParams } from 'react-router';
 import { useTranslation } from 'react-i18next';
-import { ArrowLeft, Search, X } from 'lucide-react';
+import { ArrowRight, Search, X } from 'lucide-react';
 import { allModels, brands, type ModelRef } from '../../data/devices';
 import { hasQualityOptions, repairById, repairs, type RepairId } from '../../data/repairs';
 import { orderLink } from '../../features/order/orderLink';
@@ -185,7 +185,7 @@ function ModelCard({ modelRef, onlyRepair }: { modelRef: ModelRef; onlyRepair?: 
           aria-label={t('card.orderFor', { model: model.name })}
         >
           {t('card.order')}
-          <Icon icon={ArrowLeft} directional />
+          <Icon icon={ArrowRight} directional />
         </Link>
       </div>
       <table className="mt-4 w-full text-[0.95rem]">
@@ -221,7 +221,7 @@ function ModelCard({ modelRef, onlyRepair }: { modelRef: ModelRef; onlyRepair?: 
                       className="inline-grid size-11 place-items-center rounded-full text-accent-strong hover:bg-accent-soft"
                       aria-label={t('card.orderRepair', { repair: label, model: model.name })}
                     >
-                      <Icon icon={ArrowLeft} directional />
+                      <Icon icon={ArrowRight} directional />
                     </Link>
                   </td>
                 </tr>

@@ -3,5 +3,143 @@
     "title": "",
     "description": ""
   },
-  "title": ""
+  "title": "",
+  "progressLabel": "",
+  "progress": "",
+  "steps": {
+    "brand": {
+      "name": "",
+      "title": "",
+      "subtitle": ""
+    },
+    "model": {
+      "name": "",
+      "title": "",
+      "subtitle": ""
+    },
+    "issue": {
+      "name": "",
+      "title": "",
+      "subtitle": ""
+    },
+    "time": {
+      "name": "",
+      "title": "",
+      "subtitle": ""
+    },
+    "details": {
+      "name": "",
+      "title": "",
+      "subtitle": ""
+    },
+    "summary": {
+      "name": "",
+      "title": "",
+      "subtitle": ""
+    }
+  },
+  "brand": {
+    "other": ""
+  },
+  "model": {
+    "search": "",
+    "searchPlaceholder": "",
+    "notListed": "",
+    "otherLabel": "",
+    "otherHint": ""
+  },
+  "issue": {
+    "priceAfterCheck": "",
+    "qualityLegend": "",
+    "notSure": "",
+    "notSureText": ""
+  },
+  "quality": {
+    "original": "",
+    "compatible": ""
+  },
+  "time": {
+    "day": "",
+    "time": "",
+    "busy": "",
+    "busyLabel": "",
+    "none": ""
+  },
+  "details": {
+    "name": "",
+    "phone": "",
+    "phoneHint": "",
+    "email": "",
+    "notes": "",
+    "notesHint": "",
+    "optional": "",
+    "consentPrivacy": "",
+    "privacyLink": "",
+    "consentBackup": "",
+    "noPasscode": ""
+  },
+  "summary": {
+    "device": "",
+    "repairs": "",
+    "appointment": "",
+    "appointmentValue": "",
+    "contact": "",
+    "notes": "",
+    "address": "",
+    "edit": "",
+    "editLabel": ""
+  },
+  "estimate": {
+    "label": "",
+    "note": "",
+    "afterDiagnosis": "",
+    "freeDiagnosis": ""
+  },
+  "nav": {
+    "back": "",
+    "next": "",
+    "submit": "",
+    "sending": ""
+  },
+  "errors": {
+    "step": {
+      "brand": "",
+      "model": "",
+      "issue": "",
+      "time": "",
+      "details": "",
+      "summary": ""
+    },
+    "name": "",
+    "phone": "",
+    "email": "",
+    "notes": "",
+    "consentPrivacy": "",
+    "consentBackup": "",
+    "submit": ""
+  },
+  "confirm": {
+    "title": "",
+    "subtitle": "",
+    "orderNumber": "",
+    "keepNumber": "",
+    "whatsapp": "",
+    "calendar": "",
+    "status": "",
+    "navigate": ""
+  },
+  "whatsapp": {
+    "intro": "",
+    "order": "",
+    "device": "",
+    "repairs": "",
+    "appointment": "",
+    "estimate": "",
+    "customer": "",
+    "notes": ""
+  },
+  "calendar": {
+    "title": "",
+    "description": ""
+  }
 }

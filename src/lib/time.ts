@@ -65,6 +65,24 @@ export function openState(hours: WeeklyHours, now: Date = new Date()): OpenState
   return { open: false };
 }
 
+/**
+ * The UTC instant of a wall-clock time in the business time zone.
+ * e.g. zonedTimeToUtc('2026-07-01', '10:00') → 2026-07-01T07:00:00Z (Israel summer time, UTC+3)
+ */
+export function zonedTimeToUtc(date: string, time: string, timeZone: string = siteConfig.timeZone): Date {
+  const [y = 0, mo = 1, d = 1] = date.split('-').map(Number);
+  const [h = 0, mi = 0] = time.split(':').map(Number);
+  const wallAsUtc = Date.UTC(y, mo - 1, d, h, mi);
+  // offset = (wall clock seen in zone) - (instant); apply twice to settle around DST changes
+  let guess = wallAsUtc;
+  for (let i = 0; i < 2; i++) {
+    const p = zonedParts(new Date(guess), timeZone);
+    const seen = Date.UTC(p.year, p.month - 1, p.day, Math.floor(p.minutes / 60), p.minutes % 60);
+    guess = guess - (seen - wallAsUtc);
+  }
+  return new Date(guess);
+}
+
 /** Date key "YYYY-MM-DD" for a zoned calendar day. */
 export function dateKey(p: Pick<ZonedParts, 'year' | 'month' | 'day'>): string {
   return `${p.year}-${String(p.month).padStart(2, '0')}-${String(p.day).padStart(2, '0')}`;

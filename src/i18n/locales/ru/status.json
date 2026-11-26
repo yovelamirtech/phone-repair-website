@@ -3,5 +3,67 @@
     "title": "",
     "description": ""
   },
-  "title": ""
+  "title": "",
+  "subtitle": "",
+  "form": {
+    "order": "",
+    "last4": "",
+    "last4Hint": "",
+    "submit": "",
+    "checking": ""
+  },
+  "errors": {
+    "order": "",
+    "last4": ""
+  },
+  "demo": {
+    "title": "",
+    "text": "",
+    "digits": ""
+  },
+  "placeholder": "",
+  "result": {
+    "order": ""
+  },
+  "notFound": {
+    "title": "",
+    "text": "",
+    "whatsapp": "",
+    "whatsappText": ""
+  },
+  "timeline": {
+    "current": "",
+    "done": "",
+    "upcoming": ""
+  },
+  "steps": {
+    "received": {
+      "name": "",
+      "text": ""
+    },
+    "diagnosing": {
+      "name": "",
+      "text": ""
+    },
+    "awaitingApproval": {
+      "name": "",
+      "text": ""
+    },
+    "awaitingPart": {
+      "name": "",
+      "text": ""
+    },
+    "repairing": {
+      "name": "",
+      "text": ""
+    },
+    "ready": {
+      "name": "",
+      "text": ""
+    },
+    "delivered": {
+      "name": "",
+      "text": ""
+    }
+  }
 }

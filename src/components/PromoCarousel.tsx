@@ -131,7 +131,7 @@ export function PromoCarousel() {
           aria-label={t('carousel.prev')}
           className="absolute start-3 top-1/2 hidden size-11 -translate-y-1/2 place-items-center rounded-full bg-white/90 shadow-(--shadow-soft) hover:bg-white lg:grid"
         >
-          <Icon icon={ChevronRight} directional size={24} />
+          <Icon icon={ChevronLeft} directional size={24} />
         </button>
         <button
           type="button"
@@ -139,7 +139,7 @@ export function PromoCarousel() {
           aria-label={t('carousel.next')}
           className="absolute end-3 top-1/2 hidden size-11 -translate-y-1/2 place-items-center rounded-full bg-white/90 shadow-(--shadow-soft) hover:bg-white lg:grid"
         >
-          <Icon icon={ChevronLeft} directional size={24} />
+          <Icon icon={ChevronRight} directional size={24} />
         </button>
       </div>
 

@@ -1,7 +1,7 @@
 import { Link } from 'react-router';
 import { useTranslation } from 'react-i18next';
 import {
-  ArrowLeft,
+  ArrowRight,
   BadgeCheck,
   CalendarCheck,
   Clock,
@@ -90,7 +90,7 @@ function PopularRepairs() {
           <SectionHeading id="popular-title" title={t('popular.title')} subtitle={t('popular.subtitle')} />
           <Link to={routes.prices} className="inline-flex min-h-11 items-center gap-1 font-semibold text-accent-strong hover:underline">
             {t('popular.all')}
-            <Icon icon={ArrowLeft} directional />
+            <Icon icon={ArrowRight} directional />
           </Link>
         </div>
         <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -249,7 +249,7 @@ function GalleryPeek() {
           <SectionHeading id="gallery-title" title={t('gallery.title')} subtitle={t('gallery.subtitle')} />
           <Link to={routes.gallery} className="inline-flex min-h-11 items-center gap-1 font-semibold text-accent-strong hover:underline">
             {t('gallery.all')}
-            <Icon icon={ArrowLeft} directional />
+            <Icon icon={ArrowRight} directional />
           </Link>
         </div>
         <ul className="mt-10 grid gap-4 md:grid-cols-3">
